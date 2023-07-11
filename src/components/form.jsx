@@ -72,37 +72,39 @@ const Form = () => {
                     </div>
                 </div>
 
-                <div className='form-fields'>
-                    <label htmlFor="email">Email-ID*</label>
-                    <input type={"text"} name='email' placeholder='Enter a name'
-                        {...register('email', {
-                            required: {
-                                value: true,
-                                message: "Email-ID is required",
-                            },
-                            pattern: {
-                                value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
-                                message: "Invalid  Email-ID"
-                            }
-                        })}
-                    />
-                    <span className='err-msg'>{errors?.email && errors.email.message}</span>
-                </div>
+                <div className='form-input_fields'>
+                    <div className='form-fields'>
+                        <label htmlFor="email">Email-ID*</label>
+                        <input type={"text"} name='email' placeholder='Enter a name'
+                            {...register('email', {
+                                required: {
+                                    value: true,
+                                    message: "Email-ID is required",
+                                },
+                                pattern: {
+                                    value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
+                                    message: "Invalid  Email-ID"
+                                }
+                            })}
+                        />
+                        <span className='err-msg'>{errors?.email && errors.email.message}</span>
+                    </div>
 
-                <div className='form-field' style={{ marginBottom: '1rem' }}>
-                    <label htmlFor="developer">Your Role*</label>
-                    <div className='form-field' style={{ marginBottom: '0.5rem' }}></div>
-                    <Controller
-                        control={control}
-                        name='role'
-                        render={({ field }) => <Select options={options} {...field} placeholder="Select a your role" styles={{ control: styles => ({ ...styles, borderRadius: "25px" }) }} />}
-                        rules={{
-                            required: " Your Role is required",
-                        }}
+                    <div className='form-field' style={{ marginBottom: '0rem' }}>
+                        <label htmlFor="developer">Your Role*</label>
+                        <div className='form-field' style={{ marginBottom: '0.5rem' }}></div>
+                        <Controller
+                            control={control}
+                            name='role'
+                            render={({ field }) => <Select options={options} {...field} placeholder="Select a your role" styles={{ control: styles => ({ ...styles, borderRadius: "25px" }) }} />}
+                            rules={{
+                                required: " Your Role is required",
+                            }}
 
-                        {...register('role', { required: true })}
-                    />
-                    <span className='err-msg'>{errors?.role && errors.role.message}</span>
+                            {...register('role', { required: true })}
+                        />
+                        <span className='err-msg'>{errors?.role && errors.role.message}</span>
+                    </div>
                 </div>
                 <div>
                     <div style={{ marginBottom: "0.5rem" }}>

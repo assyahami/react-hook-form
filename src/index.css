@@ -1,6 +1,8 @@
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("https://img.freepik.com/free-photo/cup-coffee-with-laptop-cell-phone-diary-with-pen-white-background_23-2147924063.jpg?w=2000");
+  background-position: center;
+  background-size: cover;
 }
 .form-fields{
   display: flex;
@@ -13,7 +15,7 @@ body{
 }
 .form-fields input{
   border-radius: 25px;
-  padding:0.8rem;
+  padding:0.5rem;
   border-color: skyblue;
 }
 .app-container{
@@ -51,7 +53,7 @@ body{
 }
 .form-container{
   background-color: #dfdbdb;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 25px;
   box-shadow: 10px 12px 1px 0px rgba(0,0,0,0.5);
 }
