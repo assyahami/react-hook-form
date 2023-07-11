@@ -1,0 +1,70 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("https://img.freepik.com/free-photo/cup-coffee-with-laptop-cell-phone-diary-with-pen-white-background_23-2147924063.jpg?w=2000");
+}
+.form-fields{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* margin-top: 0.5rem; */
+}
+.form-fields label{
+  font-size: 14px ;
+}
+.form-fields input{
+  border-radius: 25px;
+  padding:0.8rem;
+  border-color: skyblue;
+}
+.app-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.submit-btn button{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  letter-spacing: 5px;
+  background-color: #fff;
+  color: #333;
+}
+.submit-btn button:hover{
+  background-color: #333;
+  color: #fff;
+  transition: 0.5s all;
+}
+.err-msg{
+  color: #ed4646;
+  margin: 0.5rem 0;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+.form-container{
+  background-color: #dfdbdb;
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 10px 12px 1px 0px rgba(0,0,0,0.5);
+}
+.form-field_gender{
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ margin: 0.5rem 0;
+}
+.form-input_fields{
+ display: flex;
+ /* justify-content: space-between; */
+ gap: 1rem;
+ align-items: center;
+ flex-direction: row;
+}
