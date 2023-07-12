@@ -27,7 +27,7 @@ const Form = () => {
 
                     <div className='form-fields'>
                         <label htmlFor="name">Name*</label>
-                        <input type="name" placeholder='Enter a name'
+                        <input type="name" placeholder='Enter your name'
                             {...register('name', {
                                 required: {
                                     value: true,
@@ -46,7 +46,7 @@ const Form = () => {
 
                     <div className='form-fields'>
                         <label htmlFor="mobile">Mobile Number*</label>
-                        <input type="mobile" placeholder='Enter a name'
+                        <input type="mobile" placeholder='Enter your mobile number'
                             {...register('mobile', {
                                 required: {
                                     value: true,
@@ -75,7 +75,7 @@ const Form = () => {
                 <div className='form-input_fields'>
                     <div className='form-fields'>
                         <label htmlFor="email">Email-ID*</label>
-                        <input type={"text"} name='email' placeholder='Enter a name'
+                        <input type={"text"} name='email' placeholder='Enter your email-id'
                             {...register('email', {
                                 required: {
                                     value: true,
@@ -146,7 +146,7 @@ const Form = () => {
 
                 <div className='form-fields' style={{ marginTop: '1rem' }}>
                     <label htmlFor="password">Password*</label>
-                    <input type={showHidePWD ? "text" : "password"} name='password' placeholder='Enter a name'
+                    <input type={showHidePWD ? "text" : "password"} name='password' placeholder='Enter your password'
                         {...register('password', {
                             required: {
                                 value: true,
@@ -165,7 +165,7 @@ const Form = () => {
 
                 <div className='form-fields'>
                     <label htmlFor="confirmPassword">Confirm Password*</label>
-                    <input type={showHidePWD ? "text" : "password"} name='confirmPassword' placeholder='Enter a name'
+                    <input type={showHidePWD ? "text" : "password"} name='confirmPassword' placeholder='Enter confirm password'
                         {...register('confirmPassword', {
                             required: {
                                 value: true,
